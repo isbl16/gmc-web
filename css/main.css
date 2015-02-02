@@ -179,17 +179,17 @@ section ul li:before {
 }
 
 /* reference: http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
-section p a, ul a {
+section p a, section ul a {
 	color: #deb926;
 	position: relative;
 	text-decoration: none;
 }
 
-section p a:hover, p ul a:hover {
+section p a:hover {
 	color: #deb926;
 }
 
-section p a:before, p ul a:before {
+section p a:before, section ul a:before {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -210,7 +210,7 @@ section p a:before, p ul a:before {
 	transition: all 0.3s ease-in-out 0s;
 }
 
-section p a:hover:before, p ul a:hover:before {
+section p a:hover:before, section ul a:hover:before {
 	visibility: visible;
 	-webkit-transform: scaleX(1);
 	-moz-transform: scaleX(1);
