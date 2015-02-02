@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Experience GMC | Great Men Consultancy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <link rel="icon" type="image/png" href="img/gmc_logo_icon.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script>
+			$(document).ready(function(){
+			  $('.bxslider').bxSlider({
+				auto: true,
+				speed: 2000,
+				pause: 7000,
+				controls: false,
+				});
+			});
+		</script>
+		<script>
+			$(function(){
+			  $('a').each(function() {
+				if ($(this).prop('href') == window.location.href) {
+				  $(this).addClass('current');
+				}
+			  });
+			});
+		</script>
+		<script>
+			$(function () {
+			  $('.click-main-menu > ul').toggleClass('no-js js');
+			  $('.click-main-menu .js ul').hide();
+			  $('.click-services-menu').hide();
+			  $('.click-main-menu .js').click(function(e) {
+			  	if ($('.click-main-menu .js ul').is(':hidden') == true) {
+			  		$('.clicker').css('background-image','url(img/mobile-nav-icon-close.png)');
+			  		$('.click-main-menu .js ul').slideToggle(200);
+					$('.click-services-menu').hide();
+					$('.clicker').toggleClass('active');
+					e.stopPropagation();
+			  	} else {
+			  	 	$('.clicker').css('background-image','url(img/mobile-nav-icon.png)');
+			  	}
+			  });
+			  $('.click-main-menu .click-services').click(function(e) {
+				  if ($('.click-services-menu').is(':hidden') == true) {
+					$('.click-services-menu').slideToggle(200);
+					$('.click-services').toggleClass('active');
+					e.stopPropagation();
+					return false
+				  } 
+			  });
+			  $(document).click(function() {
+				if ($('.click-main-menu .js ul').is(':visible')) {
+				  $('.click-main-menu .js ul', this).slideUp();
+				  $('.click-services-menu', this).slideUp();
+				  $('.clicker').removeClass('active');
+				}
+			  });
+			});
+		</script>
+		
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <header>
+			<div class="header-logo">
+				<a href="index.html"><img class="header-logo-img1" src="img/logo-header-1.png" alt="GMC logo"></a>
+				<img class="header-logo-img2" src="img/logo-header-2.png" alt="We Understand Men">
+			</div>
+		
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="experience-gmc.html">Experience GMC</a></li>
+					<li><a href="services.html">Services</a>
+						<ul>
+							<li><a href="counselling.html">Counselling</a></li>
+							<li><a href="crisis-response-and-support-services.html">Crisis Response and Support Services</a></li>
+							<li><a href="life-skills-potential-optimisation-and-motivational-approaches.html">Life Skills, Potential Optimisation and Motivational Approaches</a></li>
+							<li><a href="group-therapy.html">Group Therapy</a></li>
+							<li><a href="prevention-rebuilding-and-strengthening.html">Prevention, Rebuilding and Strengthening</a></li>
+						</ul>
+
+					</li>
+					<li><a href="memberships.html">Memberships</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			
+				<div class="click-main-menu">
+				  <ul class="no-js">
+						<h1>| GMC</h1>
+						<a href="#" class="clicker"></a>
+					<li>
+					  <ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="experience-gmc.html">Experience GMC</a></li>
+						<li class="click-services"><a href="services.html">Services ></a></li>
+						<li><a href="memberships.html">Memberships</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					  </ul>
+					</li>
+				  </ul>
+				</div>
+				<div class="div-services-menu">
+					<ul class="click-services-menu">
+						<li><a href="counselling.html">Counselling</a></li>
+						<li><a href="crisis-response-and-support-services.html">Crisis Response and Support Services</a></li>
+						<li><a href="life-skills-potential-optimisation-and-motivational-approaches.html">Life Skills, Potential Optimisation and Motivational Approaches</a></li>
+						<li><a href="group-therapy.html">Group Therapy</a></li>
+						<li><a href="prevention-rebuilding-and-strengthening.html">Prevention, Rebuilding and Strengthening</a></li>
+					</ul>
+				</div>
+
+			
+			<ul class="bxslider">
+			  <li><img src="img/bxslider/unleash2.png"/></li>
+			  <li><img src="img/bxslider/be.png"/></li>
+			  <li><img src="img/bxslider/rebuild.png"/></li>
+			  <li><img src="img/bxslider/balance.png"/></li>
+			  <li><img src="img/bxslider/become.png"/></li>
+			</ul>
+		
+			<div class="static-logo"> 
+				<img src="img/static_logo.png" alt="GMC logo">
+			</div>
+			<div class="men-family-rel-service">
+				<p class="men-family">
+					Men & Family
+				</p>
+				<p class="rel-service">
+					Relationships Service
+				</p>
+			</div>
+		</header>
+
+		<main>
+			<aside class="sidebar">
+				<ul>
+					<li><a href="counselling.html">Counselling</a></li>
+					<li><a href="crisis-response-and-support-services.html">Crisis Response and Support Services</a></li>
+					<li><a href="life-skills-potential-optimisation-and-motivational-approaches.html">Life Skills, Potential Optimisation and Motivational Approaches</a></li>
+					<li><a href="group-therapy.html">Group Therapy</a></li>
+					<li><a href="prevention-rebuilding-and-strengthening.html">Prevention, Rebuilding and Strengthening</a></li>
+				</ul>
+			</aside>
+			<section>
+				<h1>Experience GMC</h1>
+				<h2>Why GMC?</h2>
+					<ul class="first-half-list">
+						<li>The Great Men Consultancy is a man and family oriented consulting and counselling support service.  The GMC has worked with men and families from all walks of life  </li>
+						<li>GMC understands men, their perspectives, processes, and potential</li>
+						<li>GMC is a man's partner in keeping his family and love ones emotionally, psychologically and physically safe when you are experiencing personal crisis</li>
+						<li>The GMC is man's best friend</li>
+						<li>GMC delivers measurable outcome</li>
+						<li>Our strategies are practical, portable and age-appropriate-they are your skills for life </li>
+						<li>At GMC we go deeper and wider in our overall assessment giving a realistic picture so you gain an understanding of your situation. Based on our assessment, we aim to work on the changes necessary to achieve a brighter future for you and your love ones.</li>
+						<li>Importantly, GMC is discreet, private and confidential</li>	
+					</ul>
+					<a href="contact.html"><img class="contact-img" src="img/contact_link2.jpg" alt="Contact"></a>
+					<ul>	
+						<li>Whether you have your own psychiatrist, psychologist, legal adviser and other professional help, GMC will be there to stand by you. </li>
+						<li>Choose us to protect, nurture and care for you and your love ones from unintended emotional and psychological effect resulting from one's personal crisis.</li>
+						<li>Grace travels regularly to USA/UK/Europe and Asia to observe and talk to men and families in order to gain a global perspective on men, families and relationships, in general.</li>
+						<li>GMC is serious about the business of relationships and support for men and families so you have a healthy, strong and safe relationship </li>
+						<li>GMC is the name you can trust with 28 years of solid clinical experience working with men and families. We look after you and your love ones like our own.</li>
+						<li>We provide Face-to Face consultation and counselling. </li>
+						<li>GMC consulting and counselling is about entrusting us issues you need help with. </li>
+						<li>We do the extra mile to rebuild your life</li>
+						<li>GMC relieves you of your stress and concern about who is going to look after your love ones while you're temporarily struggling due to personal crisis</li>
+						<li>Let the highly experienced therapist of GMC assist you in difficult times </li>
+						<li>We pride ourselves of our in-depth assessment that is followed with practical and effective strategies.</li>
+						<li>GMC delivers measurable outcome</li>
+						<li>We pride ourselves with our professional and nurturing approach. </li>
+						<li>With clinical experience that spans 28 years we are highly experience to deal with any complex case and situation. </li>
+						<li>We are part of your solution. </li>
+						<li>Need support and nurturing for you and your family today? <a href="contact.html">Call GMC now</a>!</li>
+					</ul>			
+					<img class="breaker-img" src="img/breaker-img1-experience-gmc.png"/>
+				<h2>GMC is unique</h2>
+					<ul>
+						<li>GMC understands men. GMC recognizes the important role of fathers in the lives of their children. GMC believes that in order to protect children, fathers need to be supported in their role as a parent through counselling</li>
+						<li>We specialise in men and families</li>
+						<li>We respond to a man's call for help in times of personal crisis by looking after his family's wellbeing by putting in place a system that prioritises the stabilization of conflict, responds to provide a nurturing, trusting, calm, and safe environment. It aims to maintain connection, early resolution, minimize disruption and healing for those who are affected</li>
+						<li>GMC gives the experience of feeling nurtured, supported, and safe</li>
+						<li>Implements strategies that become life skills</li>
+						<li>Approaches that are practical and effective</li>
+						<li>Focuses on maximising men's potential</li>
+						<li>Respects men's perspectives</li>
+						<li>Recognises men's processes</li>
+						<li>Prioritises men and their families</li>
+						<li>Provides Individual counselling</li>
+						<li>Experienced in providing Couple counselling</li>
+						<li>28-Years' experience in providing Family therapy (step and blended families)</li>
+						<li>Group therapy</li>
+					</ul>
+				<p>
+					<i>GMC gives you peace of mind, a nurturing environment and a measureable outcome!</i>
+				</p>
+				<img class="bottom-breaker-img" src="img/breaker-img2-experience-gmc.png"/>
+			</section>
+		</main>
+		
+
+		
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    <footer>
+		<table>
+			<tr>
+				<td><a href="index.html">Home</a></td>
+				<td><a href="experience-gmc.html">Experience GMC</a></td>
+				<td><a href="services.html">Services</a></td>     
+				<td><a href="memberships.html">Memberships</a></td>     
+				<td><a href="about.html">About</a></td>     
+				<td style="border:none"><a href="contact.html">Contact</a></td>
+			<tr>
+		</table>
+		<br>
+		<p>
+			Grange, West End and several inner city locations.<br>
+			PO Box 771 Mt. Ommaney QLD 4074
+		</p>
+    </footer>
+    </body>
+</html>

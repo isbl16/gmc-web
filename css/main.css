@@ -1,0 +1,914 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+	font-family: Myriad Pro, sans-serif, helvetica;
+	background-color: #051332;
+	max-width: 800px;
+	margin: 0 auto 0 auto;
+}
+
+main {
+	background: #FFF;
+	padding-top: 0px;	
+}
+
+section {
+	background-color: #FFF;
+	padding-bottom: 60px;
+}
+
+
+h1, h2, h3 {
+	font-family: Big Caslon, Myriad Pro, sans-serif;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin: 0;
+}
+
+section h1 {
+	color: #051332;
+	font-size: 60px;
+	padding-top: 0px;
+}
+
+section h2 {
+	font-size: 30px;
+	color: #051332;
+	background-color: #deb926;
+	margin-bottom: 20px;
+}
+
+section h3 {
+	font-size: 20px;
+	color: #deb926;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+section b {
+	color: #deb926;
+}
+
+section p {
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-top: 6px;
+}
+
+section ul {
+	padding-bottom: 10px;
+	padding-left: 100px;
+	padding-right: 50px;
+	margin-top: -15px;
+	list-style-type: none;
+}
+
+section ul li {
+	margin-top: -8px;
+	margin-bottom: -8px;
+}
+
+section ul li:before {
+	content: "";
+	border-color: transparent #051332;
+	border-style: solid;
+	border-width: 0.45em 0 0.45em 0.6em;
+	display: block;
+	height: 0;
+	width: 0;
+	left: -1em;
+	top: 1em;
+	position: relative;
+}
+
+/* reference: http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+section p a, ul a {
+	color: #deb926;
+	position: relative;
+	text-decoration: none;
+}
+
+section p a:hover, ul a:hover {
+	color: #deb926;
+}
+
+section p a:before, ul a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: #deb926;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	-moz-transform: scaleX(0);
+	-o-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+section p a:hover:before, ul a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	-moz-transform: scaleX(1);
+	-o-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+.header-logo {
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+
+.header-logo-img1 {
+	float: left;
+}
+
+.header-logo-img2 {
+	float: right;
+}
+
+.static-logo{
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+	top: -200px;
+}
+	
+.static-logo img {
+	position: absolute;
+}
+
+
+
+/* == START NAV == */
+nav {
+	display: table;
+	margin: 0 auto 0 auto;
+	background: #deb926;
+	background: -webkit-linear-gradient(#fbcf21, #c09b07); /* For Safari */
+	background: -o-linear-gradient(#fbcf21, #c09b07); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#fbcf21, #c09b07); /* For Firefox 3.6 to 15 */
+	background: -ms-linear-gradient(#fbcf21, #c09b07); /* IE */
+
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	z-index: 1;
+}
+
+nav ul li {
+	display: table-cell;
+	width: 150px; /* choose higher width than cut-off point then will auto adapt to max possible cell size */
+}
+
+nav ul li ul { 
+	display: none; 
+}
+
+nav ul li a {
+	display: table-cell;
+	width: 150px; 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 16px;
+	text-decoration: none;
+  	color: #051332;
+}
+
+nav ul li a:hover {
+  	color: #deb926;
+  	background: #051332;
+	background: -webkit-linear-gradient(#10285E, #091C45); /* For Safari */
+	background: -o-linear-gradient(#10285E, #091C45); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#10285E, #091C45); /* For Firefox 3.6 to 15 */	
+	background: -ms-linear-gradient(#10285E, #091C45); /* IE */
+
+}
+
+nav li:hover ul {
+	display: block;
+	position: absolute;
+	height: 20px;
+}
+ 
+nav li:hover li {
+	float: left;
+	width: 800px;
+}
+
+nav li:hover a { 
+  	background: #deb926; 
+  	height:15px; /* Height of lower-level nav items is shorter than main level */
+}
+ 
+nav li:hover li a:hover { 
+  	color:#deb926;
+  	background: #051332;
+  	background: -webkit-linear-gradient(#10285E, #091C45); /* For Safari */
+	background: -o-linear-gradient(#10285E, #091C45); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#10285E, #091C45); /* For Firefox 3.6 to 15 */
+	background: -ms-linear-gradient(#10285E, #091C45); /* IE */
+}
+ 
+nav li ul li a {
+    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+    font-size: 12px;
+    padding-left: 20px;
+    width: 400px;
+}
+ 
+/* == END NAV == */
+
+.click-main-menu, .click-services-menu {
+	display: none;
+}
+
+
+.men-family-rel-service {
+	display: block;
+	width: 100%;
+	background-color: #FFF;
+	padding-top: 10px;
+	padding-left: 50px;
+	font-family: Big Caslon, Myriad Pro, sans-serif;
+	text-align: left;
+	color: #051332;
+	box-sizing: border-box;
+	
+}
+
+.men-family {
+	font-size: 20px;
+	margin: 0;
+}
+
+.mobile-nav {
+	display: none;
+}
+
+.rel-service {
+	font-size: 15px;
+	margin: 0;
+}
+
+.contact-img {
+	float:right; 
+	padding: 20px;
+}
+
+.breaker-img {
+	width: 100%;
+}
+
+.bottom-breaker-img {
+	margin-bottom: -60px;
+	width: 100%;
+}
+
+.first-half-list {
+	margin-bottom: 0px;
+}
+
+
+.next-service-link {
+	float: right; 
+	background: #deb926;
+	padding: 20px;
+	margin-bottom: 0;
+}
+
+.next-service-link a, footer a {
+	color: #051332;
+	position: relative;
+	text-decoration: none;
+}
+
+.next-service-link a:hover, footer a:hover {
+	color: #051332;
+}
+
+.next-service-link a:before, footer a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: #051332;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	-moz-transform: scaleX(0);
+	-o-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.next-service-link a:hover:before, footer a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	-moz-transform: scaleX(1);
+	-o-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+.services-ul {
+	list-style: none;
+	padding-left: 68px;
+}
+
+.services-ul li:before {
+	content: "";
+	border-color: transparent #deb926;
+	border-style: solid;
+	border-width: 0.45em 0 0.45em 0.6em;
+	display: block;
+	height: 0;
+	width: 0;
+	left: -1em;
+	top: 1em;
+	position: relative;
+}
+
+
+
+/* == START SIDEBAR == */
+
+.sidebar {
+	float: right;
+	width: 200px;
+	margin: 0 0 20px 20px;
+	padding: 5px 20px 5px 15px;
+	background-color: #FFF;
+}
+
+.sidebar ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar li {
+	background: #deb926;
+	background: -webkit-linear-gradient(#fbcf21, #c09b07); 
+	background: -o-linear-gradient(#fbcf21, #c09b07); 
+	background: -moz-linear-gradient(#fbcf21, #c09b07); 
+	background: -ms-linear-gradient(#fbcf21, #c09b07); 
+	text-align: center;
+	margin: 2px;
+}
+
+.sidebar li a {
+	font-size: 15px;
+	color:#051332;
+	text-decoration:none;
+	display: block;
+	padding: 2px 5px 2px 5px;
+}
+
+.sidebar a:hover {
+	background: #051332;
+	background: -webkit-linear-gradient(#10285E, #091C45); /* For Safari */
+	background: -o-linear-gradient(#10285E, #091C45); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#10285E, #091C45); /* For Firefox 3.6 to 15 */
+	background: -ms-linear-gradient(#10285E, #091C45); /* IE */
+	color:#deb926;
+}
+
+.sidebar a.current {
+	background: #051332;
+	background: -webkit-linear-gradient(#10285E, #091C45); /* For Safari */
+	background: -o-linear-gradient(#10285E, #091C45); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#10285E, #091C45); /* For Firefox 3.6 to 15 */
+	background: -ms-linear-gradient(#10285E, #091C45); /* IE */
+	color:#deb926;
+}
+/* == END SIDEBAR == */
+
+
+/* == START FOOTER == */
+footer {
+	margin-top: 0px;
+	background: #deb926;
+	background: -webkit-linear-gradient(#fbcf21, #c09b07); /* For Safari */
+	background: -o-linear-gradient(#fbcf21, #c09b07); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#fbcf21, #c09b07); /* For Firefox 3.6 to 15 */
+	background: -ms-linear-gradient(#fbcf21, #c09b07); /* IE */
+	margin: 0 auto 0 auto;
+	font-size: 12px;
+	text-align: center;
+	padding: 20px 0 5px 0;
+}
+
+footer table {
+	margin: 0 auto 0 auto;
+}
+
+footer td {
+	width: 120px;
+	border-right: 1px solid #051332;
+	padding-right: 2px;
+	text-align: center;
+}
+
+/* == END FOOTER == */
+
+
+
+@media (max-width: 800px) {
+	.static-logo img {
+		height: 150px;
+		top: 50px;
+	}
+}
+
+@media (max-width: 550px) {
+	.static-logo img {
+		height: 100px;
+		top: 100px;
+	}
+}
+
+@media (max-width: 550px) {
+	nav li ul li a {
+		width: 200px;
+	}
+}
+
+@media (max-width: 768px) {
+	nav, .sidebar, .contact-img, footer table, .header-logo {
+		display: none;
+	}
+	
+	footer p {
+		margin-top: -20px;
+	}
+	
+	.men-family-rel-service {
+		padding-left: 20px;
+	}
+	
+	header {
+		margin-top: 45px;
+	}	
+	
+	/* == START CLICK NAV == */
+	
+	.clicker {
+		display: block;
+		width: 30px;
+		height: 30px;
+		float: right;
+		margin: 7px;
+		background: url("../img/mobile-nav-icon.png") no-repeat;
+		
+	}
+
+	.clicker:hover {
+		background: url("../img/mobile-nav-icon-hover.png") no-repeat;
+	}
+	
+	.click-main-menu {
+			display: block;
+			position: fixed;
+			z-index: 2;
+			height: 45px;
+			opacity: 0.9;
+			top: 0;
+			background-color: #051332;
+			width: 100%
+	}
+
+	.click-main-menu h1 {
+		color: #deb926;
+		font-size: 30px;
+		padding-left: 20px;
+		display: inline;
+	}
+	
+	.click-main-menu .js {
+		margin: 0;
+		padding: 0;
+	}
+
+	.click-main-menu ul {
+		position:relative;
+		font-weight:900; 
+		z-index: 2;
+		margin: 5px;
+		padding-left: 0;
+		margin-top: 10px;
+	}
+
+	.click-main-menu ul li {
+		position:relative;
+		list-style:none;
+		cursor:pointer;
+	}
+
+	.click-main-menu ul li ul {
+		position:absolute;
+		left:0;
+		right:0;
+	}
+
+	.click-main-menu ul .clicker {
+		color: #051332;
+	}
+
+	.click-main-menu ul .clicker:hover,.click-main-menu ul .active {
+		
+	}
+
+	.click-main-menu ul li a {
+		transition:background-color 0.2s ease-in-out;
+		-webkit-transition:background-color 0.2s ease-in-out;
+		-moz-transition:background-color 0.2s ease-in-out;
+		-o-transition:background-color 0.2s ease-in-out;
+		-ms-transition:background-color 0.2s ease-in-out;
+		display:block;
+		padding:10px;
+		background: #deb926;
+		color:#051332;
+		text-decoration:none;
+	}
+
+	.click-main-menu ul li a:hover {
+		background:#F2F2F2;
+	}
+
+	.click-services-menu {
+		display: block;
+		margin: 0;
+		width: 50%;
+		position: fixed;
+		padding: 0;
+		margin-left: 50%;
+		z-index: 3;
+		margin-top: 7px;
+	}
+
+
+	/* Fallbacks */
+	.click-main-menu .no-js ul {display:none;}
+	.click-main-menu .no-js:hover ul {display:block;}
+
+	.div-services-menu ul li {
+		list-style-type: none;
+		margin-right: 5px;
+	}
+	
+	.div-services-menu ul li a {
+		transition:background-color 0.2s ease-in-out;
+		-webkit-transition:background-color 0.2s ease-in-out;
+		-moz-transition:background-color 0.2s ease-in-out;
+		-o-transition:background-color 0.2s ease-in-out;
+		-ms-transition:background-color 0.2s ease-in-out;
+		display:block;
+		padding:10px;
+		background: #FFF;
+		color:#deb926;
+		text-decoration:none;
+	}
+	
+	.div-services-menu ul li a:hover {
+		background: #051332;
+	}
+
+
+	/* == END CLICK NAV */
+
+	
+	section {
+		padding-bottom: 20px;
+	}
+	
+	section ul {
+		padding-left: 50px;
+	}
+	
+	section h1 {
+		font-size: 40px;
+		padding-left: 20px;
+	}
+	
+	section h2 {
+		font-size: 22px;
+		padding-left: 20px;
+	}
+	
+	section p {
+		font-size: 17px;
+		line-height: 25px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.bottom-breaker-img {
+		margin-bottom: -20px;
+	}
+	
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact | Great Men Consultancy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <link rel="icon" type="image/png" href="img/gmc_logo_icon.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script>
+			$(document).ready(function(){
+			  $('.bxslider').bxSlider({
+				auto: true,
+				speed: 2000,
+				pause: 7000,
+				controls: false,
+				});
+			});
+		</script>
+		<script>
+			$(function(){
+			  $('a').each(function() {
+				if ($(this).prop('href') == window.location.href) {
+				  $(this).addClass('current');
+				}
+			  });
+			});
+		</script>
+		<script>
+			$(function () {
+			  $('.click-main-menu > ul').toggleClass('no-js js');
+			  $('.click-main-menu .js ul').hide();
+			  $('.click-services-menu').hide();
+			  $('.click-main-menu .js').click(function(e) {
+			  	if ($('.click-main-menu .js ul').is(':hidden') == true) {
+			  		$('.clicker').css('background-image','url(img/mobile-nav-icon-close.png)');
+			  		$('.click-main-menu .js ul').slideToggle(200);
+					$('.click-services-menu').hide();
+					$('.clicker').toggleClass('active');
+					e.stopPropagation();
+			  	} else {
+			  	 	$('.clicker').css('background-image','url(img/mobile-nav-icon.png)');
+			  	}
+			  });
+			  $('.click-main-menu .click-services').click(function(e) {
+				  if ($('.click-services-menu').is(':hidden') == true) {
+					$('.click-services-menu').slideToggle(200);
+					$('.click-services').toggleClass('active');
+					e.stopPropagation();
+					return false
+				  } 
+			  });
+			  $(document).click(function() {
+				if ($('.click-main-menu .js ul').is(':visible')) {
+				  $('.click-main-menu .js ul', this).slideUp();
+				  $('.click-services-menu', this).slideUp();
+				  $('.clicker').removeClass('active');
+				}
+			  });
+			});
+		</script>
+		
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <header>
+			<div class="header-logo">
+				<a href="index.html"><img class="header-logo-img1" src="img/logo-header-1.png" alt="GMC logo"></a>
+				<img class="header-logo-img2" src="img/logo-header-2.png" alt="We Understand Men">
+			</div>
+		
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="experience-gmc.html">Experience GMC</a></li>
+					<li><a href="services.html">Services</a>
+						<ul>
+							<li><a href="counselling.html">Counselling</a></li>
+							<li><a href="crisis-response-and-support-services.html">Crisis Response and Support Services</a></li>
+							<li><a href="life-skills-potential-optimisation-and-motivational-approaches.html">Life Skills, Potential Optimisation and Motivational Approaches</a></li>
+							<li><a href="group-therapy.html">Group Therapy</a></li>
+							<li><a href="prevention-rebuilding-and-strengthening.html">Prevention, Rebuilding and Strengthening</a></li>
+						</ul>
+
+					</li>
+					<li><a href="memberships.html">Memberships</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			
+				<div class="click-main-menu">
+				  <ul class="no-js">
+						<h1>| GMC</h1>
+						<a href="#" class="clicker"></a>
+					<li>
+					  <ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="experience-gmc.html">Experience GMC</a></li>
+						<li class="click-services"><a href="services.html">Services ></a></li>
+						<li><a href="memberships.html">Memberships</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					  </ul>
+					</li>
+				  </ul>
+				</div>
+				<div class="div-services-menu">
+					<ul class="click-services-menu">
+						<li><a href="counselling.html">Counselling</a></li>
+						<li><a href="crisis-response-and-support-services.html">Crisis Response and Support Services</a></li>
+						<li><a href="life-skills-potential-optimisation-and-motivational-approaches.html">Life Skills, Potential Optimisation and Motivational Approaches</a></li>
+						<li><a href="group-therapy.html">Group Therapy</a></li>
+						<li><a href="prevention-rebuilding-and-strengthening.html">Prevention, Rebuilding and Strengthening</a></li>
+					</ul>
+				</div>
+
+			
+			<ul class="bxslider">
+			  <li><img src="img/bxslider/unleash2.png"/></li>
+			  <li><img src="img/bxslider/be.png"/></li>
+			  <li><img src="img/bxslider/rebuild.png"/></li>
+			  <li><img src="img/bxslider/balance.png"/></li>
+			  <li><img src="img/bxslider/become.png"/></li>
+			</ul>
+		
+			<div class="static-logo"> 
+				<img src="img/static_logo.png" alt="GMC logo">
+			</div>
+			<div class="men-family-rel-service">
+				<p class="men-family">
+					Men & Family
+				</p>
+				<p class="rel-service">
+					Relationships Service
+				</p>
+			</div>
+		</header>
+
+		<main>
+			<aside class="sidebar">
+				<ul>
+					<li><a href="counselling.html">Counselling</a></li>
+					<li><a href="crisis-response-and-support-services.html">Crisis Response and Support Services</a></li>
+					<li><a href="life-skills-potential-optimisation-and-motivational-approaches.html">Life Skills, Potential Optimisation and Motivational Approaches</a></li>
+					<li><a href="group-therapy.html">Group Therapy</a></li>
+					<li><a href="prevention-rebuilding-and-strengthening.html">Prevention, Rebuilding and Strengthening</a></li>
+				</ul>
+			</aside>
+			<section>
+				<h1>Contact</h1>
+					<p>
+						<b>Locations of Clinics</b><br>
+						Grange, West End and several inner city locations.<br>
+						PO Box 771 Mt. Ommaney QLD 4074
+					</p>
+					<p>
+						<b>Mobile</b><br> 
+						0438 719 539
+					</p>
+					<p>
+						<b>Email</b><br> 
+						grace@greatmenconsultancy.com.au
+					</p>
+			</section>
+		</main>
+		
+
+		
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    <footer>
+		<table>
+			<tr>
+				<td><a href="index.html">Home</a></td>
+				<td><a href="experience-gmc.html">Experience GMC</a></td>
+				<td><a href="services.html">Services</a></td>     
+				<td><a href="memberships.html">Memberships</a></td>     
+				<td><a href="about.html">About</a></td>     
+				<td style="border:none"><a href="contact.html">Contact</a></td>
+			<tr>
+		</table>
+		<br>
+		<p>
+			Grange, West End and several inner city locations.<br>
+			PO Box 771 Mt. Ommaney QLD 4074
+		</p>
+    </footer>
+    </body>
+</html>
