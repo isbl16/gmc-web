@@ -342,6 +342,7 @@ nav li ul li a {
 	text-align: left;
 	color: #051332;
 	box-sizing: border-box;
+	-mos-box-sizing: border-box;
 	
 }
 
